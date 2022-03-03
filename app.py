@@ -38,9 +38,9 @@ try:
     st.markdown("""---""")
     # provide options to user to navigate to other dqw apps
     app_section_button('Audio Data Section 🎶',
-    '[Tabular Data Section 🏗️](https://emojifinder.com/crane)',
+    '[Tabular Data Section 🏗️](https://share.streamlit.io/soft-nougat/dqw-ivves_structured/main/app.py)',
     '[Text Data Section 📚](https://share.streamlit.io/soft-nougat/dqw-ivves_text/main/app.py)',
-    '[Image Data Section 🖼️](https://emojifinder.com/crane)')
+    '[Image Data Section 🖼️](https://share.streamlit.io/soft-nougat/dqw-ivves_images/main/app.py)')
     st.markdown("""---""")
     
     audio_data_app()
