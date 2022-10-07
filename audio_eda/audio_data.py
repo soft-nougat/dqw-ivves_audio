@@ -186,11 +186,11 @@ def compare_files(reference, comparison):
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(16, 8))
 
     # Plot Reference
-    librosa.display.waveplot(y1, sr=sr1, ax=ax1)
+    librosa.display.waveshow(y1, sr=sr1, ax=ax1)
     ax1.set(title='Reference')
 
     # Plot Comparison
-    librosa.display.waveplot(y2, sr=sr2, ax=ax2)
+    librosa.display.waveshow(y2, sr=sr2, ax=ax2)
     ax2.set(title='Comparison')
 
     plt.tight_layout()
@@ -272,7 +272,7 @@ def audio_eda(file):
              "Specifically, it's telling us about the wave's displacement, and how it changes over time.",
              "The x axis represents time in seconds, while the y axis represents amplitude (displacement).")
     plt.figure(figsize=FIG_SIZE)
-    librosa.display.waveplot(signal, sample_rate, alpha=0.4)
+    librosa.display.waveshow(signal, sample_rate, alpha=0.4)
     plt.xlabel("Time (s)")
     plt.ylabel("Amplitude")
     plt.title("Waveform")
