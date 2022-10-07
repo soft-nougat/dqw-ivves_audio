@@ -9,3 +9,4 @@ audiomentations
 librosa
 pydub
 dtw
+ipython
